@@ -1,0 +1,10 @@
+import csv
+f = open("students.csv","a")
+n = input("Enter the name of the student: ")
+c = input("Enter the class of the student: ")
+s = input("Enter the section of the student: ")
+r = int(input("Enter the roll number of the student: "))
+stud = (r,s,c,n)
+wr = csv.writer(f)
+wr.writerow(stud)
+f.close()

@@ -1,0 +1,6 @@
+f = open("poem.txt","r")
+s = f.readline()
+d = f.readlines()
+m = f.seek(0)
+x = f.readlines()
+print(s,d,x,sep="##########################")
